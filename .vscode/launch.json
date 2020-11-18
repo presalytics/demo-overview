@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "Python: Debug CLI",
+            "type": "python",
+            "request": "launch",
+            "module": "presalytics",
+            "args": [
+                "pull",
+                "--id",
+                "46c2b34b-8e87-46cd-97f2-7f9082dadd45"
+            ],
+            "justMyCode": false
+        }
+    ]
+}
