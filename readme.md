@@ -1,3 +1,55 @@
+# Advanced Use Cases and Automation
+
+For 
+
+* [Setting Up A Workspace](#Setting)
+* [Updating Template Fields in a PowerPoint File](#Updating)
+
+----------
+
+# Setting Up A Workspace
+
+1. Set up and activate a virtual environment
+
+```bash
+python3 - m venv venv
+. venv/bin/activate
+```
+
+2. Install `presalytics`
+
+```bash
+pip install presalytics
+```
+
+3. Set Configuration
+
+```bash
+presaltyics config {YOUR_USERNAME} # The primary email address on your account
+```
+
+4. Load story into workspace
+
+```bash
+presaltyics pull --id {STORY_ID} # The 36 digit fingerprint for the story 
+```
+
+----------
+
+# Updating Template Fields in a PowerPoint File
+
+
+1. run `update_template.py` to update the uploaded template from a script
+
+To update the template, run the from command from your terminal:
+
+```bash
+python update_template.py
+```
+
+The `update_tempalte.py` script simulates an api call update the library.  The comments in the script (seen below) show explain what each command in the script does and how it interacts with the Presaltyics API.
+
+```python
 import presalytics # imports the presalytics python package
 
 def dummy_api_call_or_sql_query():
@@ -20,7 +72,7 @@ def dummy_api_call_or_sql_query():
         'Contact2.Notes': 'This is a test demo'
     }
 }
-    
+
 # Turn the local copy of story outline, "story.yaml", into a python object
 outline: presalytics.StoryOutline = presalytics.StoryOutline.import_yaml('story.yaml')
 
@@ -42,6 +94,16 @@ new_widget = presalytics.OoxmlEditorWidget(
 outline.pages[2].widgets[0] = new_widget.serialize()  # update the python representation of the story outline
 
 outline.export_yaml('story.yaml')  # write the outline to the story.yaml file
+```
 
+2.  Update The Story Outline from the Command line
 
+The `push` command int he presaltics CLI Tool updates the outline in the API.
 
+```bash
+presaltyics push
+```
+
+# Creating Interactive Content with Javascript
+
+TBD
