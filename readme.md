@@ -25,13 +25,13 @@ pip install presalytics
 3. Set Configuration
 
 ```bash
-presaltyics config {YOUR_USERNAME} # The primary email address on your account
+presalytics config {YOUR_USERNAME} # The primary email address on your account
 ```
 
 4. Load story into workspace
 
 ```bash
-presaltyics pull --id {STORY_ID} # The 36 digit fingerprint for the story 
+presalytics pull --id {STORY_ID} # The 36 digit fingerprint for the story 
 ```
 
 ----------
@@ -47,7 +47,7 @@ To update the template, run the from command from your terminal:
 python update_template.py
 ```
 
-The `update_tempalte.py` script simulates an api call update the library.  The comments in the script (seen below) show explain what each command in the script does and how it interacts with the Presaltyics API.
+The `update_tempalte.py` script simulates an api call update the library.  The comments in the script (seen below) show explain what each command in the script does and how it interacts with the Presalytics API.
 
 ```python
 import presalytics # imports the presalytics python package
@@ -101,7 +101,7 @@ outline.export_yaml('story.yaml')  # write the outline to the story.yaml file
 The `push` command int he presaltics CLI Tool updates the outline in the API.
 
 ```bash
-presaltyics push
+presalytics push
 ```
 
 # Creating Interactive Content with Javascript
