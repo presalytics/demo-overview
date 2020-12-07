@@ -12,7 +12,7 @@ For
 1. Set up and activate a virtual environment
 
 ```bash
-python3 - m venv venv
+python3 -m venv venv
 . venv/bin/activate
 ```
 
