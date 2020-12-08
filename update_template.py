@@ -9,15 +9,15 @@ def dummy_api_call_or_sql_query():
     will be updated accordingly.  This is helpful for creating live updating dashboard and reports.
     """
     return {"replace_map" : {
-        'Account.Name': 'Presalytics.io',
-        'Contact1.Name': 'Kevin Hannegan',
-        'Contact1.Title': 'Founder',
-        'Contact1.Email': 'kevin@presalytics.io',
-        'Contact1.Notes': 'This is a test note 1',
-        'Contact2.Name': 'John Boet',
-        'Contact2.Title': 'Advisor (For now)',
-        'Contact2.Email': 'john@presalytics.io',
-        'Contact2.Notes': 'This is a test demo'
+        'Account.Name': 'Forum Co-Op',
+        'Contact1.Name': 'D Scott Pierce',
+        'Contact1.Title': 'CEO',
+        'Contact1.Email': 'scott.pierce@pinionvote.com',
+        'Contact1.Notes': 'Scott is the Founder and CEO of PINION',
+        'Contact2.Name': 'Eric Veal',
+        'Contact2.Title': 'CPO',
+        'Contact2.Email': 'eric.veal@pinionvote.com',
+        'Contact2.Notes': 'Eric is the Chief Product Officer of PINION'
     }
 }
     
