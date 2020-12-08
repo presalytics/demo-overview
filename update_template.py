@@ -18,8 +18,8 @@ def dummy_api_call_or_sql_query():
         'Contact2.Title': 'CPO',
         'Contact2.Email': 'eric.veal@pinionvote.com',
         'Contact2.Notes': 'Eric is the Chief Product Officer of PINION'
+        }
     }
-}
     
 # Turn the local copy of story outline, "story.yaml", into a python object
 outline: presalytics.StoryOutline = presalytics.StoryOutline.import_yaml('story.yaml')
